@@ -1,0 +1,58 @@
+# L = int(input("Introduceti Lungimea lemnului in cm: "))
+# l = int(input("Introduceti latimea lemnului in cm: "))
+# h = int(input("Introduceti inaltimea lemnului in cm: "))
+
+# if 5 <= l:
+#     print("este sipca")
+# elif 5 <= h:
+#     print("E prea groasa sa fie sipca Este dulap")
+# else h >= 6:
+#     print("Este dulap")
+
+# Program 2
+	
+a = float(input("Introduceti lungimea scandurii in centimetri: "))
+b = float(input("Introduceti latimea scandurii in centimetri: "))
+c = float(input("Introduceti inaltimea scandurii in centimetri: "))
+bucati = int(input("introduceti nr in bucati: "))
+# Calculez volumul unitar in metri cubi; introduc si numarul de bucati pentru a calcula ulterior si volumul total si totalul facturii
+
+V_unitar = a*b*c/1000000
+
+# Calculez volumul total ca volumul fiecarei scanduri (sau sipca/dulap)* nr de bucati
+
+V_total = V_unitar*bucati    # volumul in mc
+
+# print(V)
+print(f"V_unitar = {V_unitar: .3f} metri-cubi")
+
+# Clasificare - scandura; rigla/stalp; sipca, dulap. Identificam tipul materialului 
+
+if b < 5.5 and c < 3:
+   tip = "sipca"
+elif b > 5.5 and c<3:
+    tip = "scandura"
+elif b> 5.5 and b < 20 and c > 3:
+    tip = "rigla - stalp"
+elif b>5.5 and b <60.1 and c>3 and c<6:
+    tip = "dulap"
+print("Tip material", tip)
+    
+pret = float(input("Introduceti pretul de vanzare in metri cubi fara TVA: "))
+total_pret_factura_fara_TVA = V_total*pret
+pret_cu_tva = total_pret_factura_fara_TVA*1.21
+total_factura = V_total*pret_cu_tva*bucati
+
+# afisare date factura
+# print(f "Pret fara TVA: {pret_fara_tva: .2f}"lei")
+# print(f "Pret cu TVA: {pret_cu_tva: .2f}"lei")
+# print(f "Total factura: {total_factura: .2f}"lei")
+          
+print("Total fara tva")
+print(total_pret_factura_fara_TVA)
+print("total cu TVA")
+print(pret_cu_tva)
+print("Totalul facturii este")
+print(total_factura)
+
+# un programel simplu de inceput
