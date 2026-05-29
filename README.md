@@ -1,0 +1,3 @@
+Acesta este primul programel scris de mine, l-am scris acum cateva luni sa imi exersez conditionalele if. Identifica tipuri de material lemnos utilizate in constructii sau in alte domenii in functie de dimensiuni. La-m gandit ca utilizatorul sa introduca dimensiunile de la tastatura si programul sa dea raspunsul daca este sipca de acoperis de exemplu.
+De asemenea programul calculeaza volumul total al materialului lemnos vandut/cumparat utilizatorul trebuei doar sa introduca numarul de bucati vandute/cumparate
+De asemenea programul calculeaza totalul facturii/totalul de plata/costul total dupa ce utilizatorul introduce numarul de bucati si pretul unitar pe metru cub. 
